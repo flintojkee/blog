@@ -1,0 +1,81 @@
+body {
+    font-family: Tahoma, serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #369;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.logo{
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.social{
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+}
+
+.navigation{
+    grid-column: 2;
+    grid-row: 2;
+    height: 50px;
+}
+
+.aside {
+    padding: 20px;
+    background-color: #936;
+    font-size: 1.4em;
+    color: white;
+}
+
+.footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #690;
+    color: white;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 1em;
+}
+
+.card {
+    background: #989898;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:1fr 200px;
+        grid-template-rows: auto 1fr auto;
+
+    }
+}
