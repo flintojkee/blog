@@ -61,12 +61,12 @@ body {
     grid-column: 2;
     grid-row: 2;
     height: 50px;
+
 }
 
 .nav-btn{
     font-size: 2rem;
     color: black;
-
 }
 
 .nav-btn:hover{
@@ -195,20 +195,57 @@ body {
 
 .aside {
     padding: 20px;
-    background-color: #936;
     font-size: 1.4em;
-    color: white;
+    color: #000000;
+}
+
+.h{
+    border-bottom: 1px solid rgba(43, 43, 43, 0.5);
+    border-top: 1px solid rgba(43, 43, 43, 0.5);
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns:200px 60px;
+    grid-template-rows: auto auto;
+}
+.contacts .contact-text{
+    grid-column: 1;
+}
+.contact-icon{
+    grid-column: 2;
+    float: right;
+}
+
+.subscribe:hover{
+    background-color: rgba(86, 86, 86, 0.51);
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
 }
 
 /*  ========= FOOTER ========= */
 
-.footer {
+footer {
     grid-column: span 3;
     padding: 30px;
     text-align: center;
-    font-size: 1.4em;
-    background-color: #690;
-    color: white;
+    font-size: 0.8em;
+    color: #000000;
+}
+.profile{
+    text-align: center;
+    color: black;
+}
+.photo{
+    display: block;
+    margin: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 1px 32px rgba(0, 0, 0, 0.12), 0 1px 16px rgba(0, 0, 0, 0.24);
 }
 
 /*  ========= POST CARD ========= */
